@@ -1,0 +1,526 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+}
+a {
+  color: #7DC3CE;
+}
+button {
+  background-color: #7DC3CE;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #61A3A5;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar .header {
+  width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar .header #categories {
+  float: left;
+  width: 74px;
+  color: transparent;
+  font-family: "Baumans";
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.navbar .header #categories .circle {
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Baumans";
+  color: white;
+  font-size: 30px;
+  float: left;
+  /*box-shadow:inset 2px 1px 5px #FFFFFF;*/
+  margin-left: 12px;
+  line-height: 45px;
+  background-color: #c8c8c8;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.navbar .header #categories #rect {
+  top: 0px;
+  width: 74px;
+  height: 10px;
+  background-color: #D96253;
+  position: absolute;
+  animation-name: myfirst;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  /* Safari and Chrome: */
+  -webkit-animation-name: myfirst;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+}
+.navbar .header #categories:hover {
+  color: #969696;
+}
+.navbar .header #categories:hover .circle {
+  background-color: #D96253;
+}
+.container {
+  padding: 120px 50px 20px;
+}
+#coding-container .project .title {
+  display: inline-block;
+  width: 28%;
+  background-color: rgba(220, 220, 220, 0.5);
+  margin: 20px 1%;
+  padding: 80px 0px 20px;
+  height: 225px;
+  vertical-align: top;
+  text-align: center;
+}
+#coding-container .project .title h2 {
+  padding-bottom: 0.41em;
+  margin: 0 20px !important;
+  border-bottom: 1px solid #dcdcdc;
+}
+#coding-container .project .title a {
+  display: block;
+}
+#coding-container .project .title a button {
+  margin-top: 20px;
+}
+#coding-container .project .description {
+  display: inline-block;
+  width: 68%;
+  margin: 20px 1%;
+  height: 325px;
+  background-size: cover;
+  background-position: center center;
+}
+#coding-container .project .description#waterlux {
+  background-image: url("assets/images/waterlux.jpg");
+}
+#coding-container .project .description#engport {
+  background-image: url("assets/images/EngPort.png");
+}
+#coding-container .project .description#kaleidescape {
+  background-image: url("assets/images/kaleidescape.png");
+}
+#coding-container .project .description#singspiel {
+  background-image: url("assets/images/singspiel.png");
+}
+#coding-container .project .description#website {
+  background-image: url("assets/images/website.png");
+}
+#coding-container .project .description#onebible {
+  background-image: url("assets/images/onebible.png");
+}
+#coding-container .project .description .text {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  height: 285px;
+  padding: 20px;
+  opacity: 0 !important;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  z-index: -1;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#coding-container .project .description .text h3 {
+  margin-top: 0;
+  font-family: 'Montserrat', Gotham, 'Proxima Nova', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif !important;
+  font-size: 16px;
+  font-weight: normal;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+#coding-container .project .description .text p {
+  font-weight: bold;
+}
+#coding-container .project .description:hover .text {
+  opacity: 1 !important;
+}
+#activities-container {
+  position: relative !important;
+}
+#activities-container .activity {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: none !important;
+  position: absolute;
+}
+#activities-container .activity .thumbnail {
+  margin: 20px 1%;
+  min-width: 250px;
+  width: 22%;
+  z-index: -1;
+  padding: 4px 15px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: black !important;
+}
+#activities-container .activity .thumbnail .caption {
+  font-family: "Quicksand";
+}
+#activities-container .activity .thumbnail .caption h3 {
+  font-family: 'Montserrat', Gotham, 'Proxima Nova', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif !important;
+  font-weight: normal;
+  font-size: 16px;
+}
+#activities-container .activity .thumbnail .caption span {
+  color: #7DC3CE;
+  font-weight: bold;
+}
+#activities-container .activity .link:hover {
+  box-shadow: 0px 0px 0px 2px #7DC3CE;
+}
+#info-container .jumbotron {
+  padding: 50px 60px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+#info-container #flowers {
+  background-image: url("assets/images/flowers_black.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  padding: 0 60px;
+}
+#info-container #flowers .overlay {
+  text-align: right;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100px;
+  font-size: 20px;
+  font-weight: 100;
+  background-color: rgba(126, 196, 207, 0.9) !important;
+  margin: -30px -60px !important;
+}
+#info-container #flowers .overlay #stuff {
+  margin-top: 100px;
+  font-family: "Quicksand";
+  font-size: 20px;
+  font-weight: 100;
+  text-align: right;
+  font-style: italic;
+  line-height: 30px;
+}
+#info-container #flowers .overlay p {
+  color: white;
+  padding-right: 20px;
+  line-height: 30px !important;
+}
+#info-container #flowers .overlay h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: white;
+  padding-right: 20px;
+}
+#info-container #flowers .overlay h5 {
+  font-size: 14px;
+  color: white;
+  padding-right: 20px;
+}
+#sounds-container #description {
+  width: 30%;
+  max-width: 500px;
+  float: left;
+  text-align: right;
+}
+#sounds-container #sounds-wookmark {
+  width: 65%;
+  float: right;
+  text-align: center;
+  position: relative;
+}
+#sounds-container #sounds-wookmark .item {
+  z-index: -1;
+  width: 48%;
+  max-width: 500px;
+}
+#sounds-container #sounds-wookmark .youtube {
+  height: 350px;
+}
+#education-container .row {
+  vertical-align: top;
+  height: auto !important;
+}
+#education-container .row .head {
+  background-color: white;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+  clear: both;
+}
+#education-container .row .head .hide {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px 0px 0px 10px;
+  float: left;
+  text-decoration: none !important;
+  clear: both;
+}
+#education-container .row .head .show {
+  display: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px 0px 0px 10px;
+  float: left;
+  text-decoration: none !important;
+}
+#education-container .row .head #hide2,
+#education-container .row .head #show2,
+#education-container .row .head #hide3,
+#education-container .row .head #show3,
+#education-container .row .head #hide4,
+#education-container .row .head #show4 {
+  margin-top: 14px;
+}
+#education-container .row .head .hide:target + .show {
+  display: inline;
+}
+#education-container .row .head .hide:target {
+  display: none;
+}
+#education-container .row .head .hide:target ~ .list {
+  display: inline;
+}
+@media print {
+  #education-container .row .head .hide,
+  #education-container .row .head .show {
+    display: none;
+  }
+}
+#education-container .row .head h4 {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Josefin Sans', sans-serif !important;
+  color: white;
+  font-size: 20px !important;
+  margin-top: 17px;
+  height: 50px;
+}
+#education-container .row .head h1 {
+  font-size: 20px !important;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-width: 1px;
+  border-color: #c8c8c8;
+  border-style: solid;
+  margin-left: 55px !important;
+  margin-top: 14px !important;
+  height: 40px;
+  border-radius: 0px 10px 10px 0px;
+  font-family: "Quicksand" !important;
+  line-height: 30px;
+}
+#education-container .row .head .list {
+  display: none;
+}
+#education-container .row .head .list ul {
+  padding-left: 55px;
+}
+#education-container .row .head .list ul li {
+  background-color: white;
+  margin-top: -1px;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+}
+#education-container .row .head .list ul li#last {
+  margin-bottom: 40px;
+}
+#education-container .row .head .list ul li h2 {
+  font-size: 20px !important;
+  float: left;
+  font-family: "Quicksand" !important;
+  margin-left: 10px;
+}
+#education-container .row .head .list ul li h3 {
+  font-size: 14px !important;
+  float: left;
+  margin-top: 22px;
+  margin-left: 10px;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+@media (max-width: 1000px) {
+  #sounds-container #description {
+    max-width: none;
+  }
+  #sounds-container #sounds-wookmark .item {
+    width: 100%;
+  }
+  #sounds-container #sounds-wookmark .youtube {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 100px 10px;
+  }
+  .header {
+    max-width: 400px !important;
+  }
+  .header #categories {
+    width: 50px !important;
+    font-size: 10px !important;
+  }
+  .header #categories .circle {
+    margin-top: 15px;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 20px !important;
+    font-size: 26px !important;
+    margin-left: 5px !important;
+    line-height: 35px !important;
+  }
+  .header #categories #rect {
+    width: 50px !important;
+  }
+  #coding-container {
+    padding: 100px 2% 20px;
+  }
+  #coding-container .project .title {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    text-align: center;
+    height: auto;
+  }
+  #coding-container .project .title h2 {
+    border-bottom: 0px solid #dcdcdc;
+    float: left;
+    margin-top: 0 !important;
+    line-height: 1.4;
+    margin-left: 20px;
+  }
+  #coding-container .project .title p {
+    vertical-align: bottom;
+    margin: 0 20px;
+    float: left;
+    line-height: 2;
+  }
+  #coding-container .project .title span {
+    vertical-align: bottom;
+    float: left;
+    line-height: 2;
+  }
+  #coding-container .project .title a {
+    display: block;
+    float: right;
+  }
+  #coding-container .project .title a button {
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+  #coding-container .project .description {
+    width: 100%;
+    margin: 0px 0px 50px;
+    height: auto;
+    min-height: 305px;
+  }
+  #coding-container .project .description .text {
+    height: auto;
+    min-height: 305px;
+  }
+  #info-container {
+    padding: 100px 0px 20px;
+  }
+  #info-container .jumbotron {
+    border-radius: 0 !important;
+  }
+  #info-container .jumbotron.overlay {
+    margin: -50px -60px !important;
+    text-align: center !important;
+  }
+  #info-container .jumbotron.overlay #stuff {
+    text-align: center !important;
+  }
+  #sounds-container #description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #sounds-container #sounds-wookmark {
+    width: 100%;
+  }
+  #education-container .row .head h1 {
+    font-size: 14px !important;
+  }
+  #education-container .row .head .list ul li h2 {
+    width: 100%;
+    margin-bottom: 0px !important;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    max-width: 360px !important;
+  }
+  .header #categories {
+    width: 45px !important;
+  }
+  .header #categories #rect {
+    width: 45px !important;
+  }
+  #coding-container .project .title p {
+    float: right;
+    margin-left: 0px;
+  }
+  #coding-container .project .title span {
+    margin-left: 20px;
+    clear: both;
+  }
+  #education-container .row .head {
+    padding: 0 !important;
+  }
+}
+@keyframes myfirst {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-webkit-keyframes myfirst /* Safari and Chrome */ {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
