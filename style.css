@@ -28,6 +28,7 @@ button:hover {
   float: right;
 }
 .navbar {
+  z-index: 100;
   background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
   top: 0;
@@ -139,7 +140,7 @@ button:hover {
   background-image: url("assets/images/onebible.png");
 }
 #coding-container .project .description .text {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   height: 285px;
   padding: 20px;
@@ -148,7 +149,8 @@ button:hover {
   -moz-transition: opacity 0.5s;
   transition: opacity 0.5s;
   z-index: -1;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 #coding-container .project .description .text h3 {
   margin-top: 0;
@@ -158,26 +160,22 @@ button:hover {
   border-bottom: 1px solid white;
   padding-bottom: 10px;
 }
-#coding-container .project .description .text p {
-  font-weight: bold;
-}
 #coding-container .project .description:hover .text {
   opacity: 1 !important;
 }
-#activities-container {
+#activities-container #activities-wookmark {
   position: relative !important;
 }
-#activities-container .activity {
-  font-family: 'Josefin Sans', sans-serif;
+#activities-container #activities-wookmark .activity {
+  font-family: 'Raleway', sans-serif;
   font-size: 12px;
   text-decoration: none !important;
   position: absolute;
 }
-#activities-container .activity .thumbnail {
+#activities-container #activities-wookmark .activity .thumbnail {
   margin: 20px 1%;
-  min-width: 250px;
-  width: 22%;
-  z-index: -1;
+  width: 282px;
+  z-index: 1;
   padding: 4px 15px;
   line-height: 1.428571429;
   background-color: #ffffff;
@@ -187,19 +185,19 @@ button:hover {
   transition: all 0.2s ease-in-out;
   color: black !important;
 }
-#activities-container .activity .thumbnail .caption {
+#activities-container #activities-wookmark .activity .thumbnail .caption {
   font-family: "Quicksand";
 }
-#activities-container .activity .thumbnail .caption h3 {
+#activities-container #activities-wookmark .activity .thumbnail .caption h3 {
   font-family: 'Montserrat', Gotham, 'Proxima Nova', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif !important;
   font-weight: normal;
   font-size: 16px;
 }
-#activities-container .activity .thumbnail .caption span {
+#activities-container #activities-wookmark .activity .thumbnail .caption span {
   color: #7DC3CE;
   font-weight: bold;
 }
-#activities-container .activity .link:hover {
+#activities-container #activities-wookmark .activity .thumbnail.link:hover {
   box-shadow: 0px 0px 0px 2px #7DC3CE;
 }
 #info-container .jumbotron {
@@ -253,6 +251,7 @@ button:hover {
   max-width: 500px;
   float: left;
   text-align: right;
+  font-family: 'Raleway', sans-serif;
 }
 #sounds-container #sounds-wookmark {
   width: 65%;
@@ -375,7 +374,8 @@ button:hover {
   float: left;
   margin-top: 22px;
   margin-left: 10px;
-  font-family: 'Josefin Sans', sans-serif !important;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 1000px) {
   #sounds-container #description {
@@ -425,19 +425,20 @@ button:hover {
     border-bottom: 0px solid #dcdcdc;
     float: left;
     margin-top: 0 !important;
-    line-height: 1.4;
+    line-height: 37px;
     margin-left: 20px;
+    padding-bottom: 0;
   }
   #coding-container .project .title p {
     vertical-align: bottom;
     margin: 0 20px;
     float: left;
-    line-height: 2;
+    line-height: 37px;
   }
   #coding-container .project .title span {
     vertical-align: bottom;
     float: left;
-    line-height: 2;
+    line-height: 37px;
   }
   #coding-container .project .title a {
     display: block;
