@@ -51,9 +51,6 @@ button:hover {
 			text-align: center;
 			font-size: 12px;
 			text-decoration: none;
-			-webkit-transition: color 0.5s;
-		  	-moz-transition: color 0.5s;
-		  	transition: color 0.5s;
 
 		  	.circle {
 				margin-top: 15px;
@@ -69,11 +66,8 @@ button:hover {
 				margin-left: 12px;
 				line-height: 45px;
 				background-color: rgb(200,200,200);
-				-webkit-transition: background-color 0.5s;
-			  	-moz-transition: background-color 0.5s;
-			  	transition: background-color 0.5s;
 			}
-			#rect {
+			.rect {
 				top: 0px;
 				width: 74px;
 				height: 10px;
@@ -93,7 +87,9 @@ button:hover {
 			color: rgb(150,150,150);
 
 			.circle {
-				background-color: #D96253;
+				background-color: rgba(0,0,0,0);
+				background-image: url(../img/circle.png);
+				background-size: 100% 100%;
 			}
 		}
 	}
@@ -462,7 +458,7 @@ button:hover {
 				margin-left: 5px !important;
 				line-height: 35px !important;
 			}
-			#rect {
+			.rect {
 				width: 50px !important;
 			}
 		}
@@ -573,7 +569,7 @@ button:hover {
 		#categories {
 			width: 45px !important;
 			
-			#rect {
+			.rect {
 				width: 45px !important;
 			}
 		}

@@ -19,13 +19,14 @@
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
-  <script type="text/javascript" src="assets/javascripts/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="assets/javascripts/jquery.wookmark.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.wookmark.js"></script>
 </head>
 <body>
-  <div class="navbar">
+  <div class="navbar" ng-controller="NavBarController">
     <div class="header">
       <a id="categories" href="#/coding">
+        <div ng-class="path === 'coding' ? 'rect' : ''" id="circle-rect"></div>
         <div class="circle" id="coding">c</div>
         coding
       </a>
@@ -34,6 +35,7 @@
         linkedin
       </a>
       <a id="categories" href="#/activities">
+        <div ng-class="path === 'activities' ? 'rect' : ''" id="activities-rect"></div>
         <div class="circle" id="activities">a</div>
         activities
       </a>
@@ -42,7 +44,7 @@
         resume
       </a>
       <a id="categories" href="#/info">
-        <div id="rect"></div>
+        <div ng-class="path === 'info' ? 'rect' : ''" id="info-rect"></div>
         <div class="circle" id="info">i</div>
         information
       </a>
@@ -51,10 +53,12 @@
         stories
       </a>
       <a id="categories" href="#/sounds">
+        <div ng-class="path === 'sounds' ? 'rect' : ''" id="sounds-rect"></div>
         <div class="circle" id="sounds">s</div>
         sounds
       </a>
       <a id="categories" href="#/education">
+        <div ng-class="path === 'education' ? 'rect' : ''" id="education-rect"></div>
         <div class="circle" id="education">e</div>
         education
       </a>
@@ -76,7 +80,7 @@
   <script src="coding/coding.js"></script>
   <script src="activities/activities.js"></script>
   <script src="info/info.js"></script>
-  <script src="sounds/sounds.js"></script>
+  <script src="sounds/sounds.js"></script> 
   <script src="education/education.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>

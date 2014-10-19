@@ -12,4 +12,10 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/info'});
+}])
+
+.controller('NavBarController', ['$location', '$scope', function($location, $scope) {
+	$scope.$on('$routeChangeStart', function(next, current) { 
+     $scope.path = $location.path().substring(1);
+   });
 }]);

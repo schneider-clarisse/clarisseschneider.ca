@@ -47,9 +47,6 @@ button:hover {
   text-align: center;
   font-size: 12px;
   text-decoration: none;
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  transition: color 0.5s;
 }
 .navbar .header #categories .circle {
   margin-top: 15px;
@@ -65,11 +62,8 @@ button:hover {
   margin-left: 12px;
   line-height: 45px;
   background-color: #c8c8c8;
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  transition: background-color 0.5s;
 }
-.navbar .header #categories #rect {
+.navbar .header #categories .rect {
   top: 0px;
   width: 74px;
   height: 10px;
@@ -87,7 +81,9 @@ button:hover {
   color: #969696;
 }
 .navbar .header #categories:hover .circle {
-  background-color: #D96253;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../img/circle.png);
+  background-size: 100% 100%;
 }
 .container {
   padding: 120px 50px 20px;
@@ -411,7 +407,7 @@ button:hover {
     margin-left: 5px !important;
     line-height: 35px !important;
   }
-  .header #categories #rect {
+  .header #categories .rect {
     width: 50px !important;
   }
   #coding-container {
@@ -497,7 +493,7 @@ button:hover {
   .header #categories {
     width: 45px !important;
   }
-  .header #categories #rect {
+  .header #categories .rect {
     width: 45px !important;
   }
   #coding-container .project .title p {
