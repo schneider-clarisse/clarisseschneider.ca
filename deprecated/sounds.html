@@ -1,0 +1,79 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="http://clarisseschneider.ca/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="http://clarisseschneider.ca/favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="assets/javascripts/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="assets/javascripts/jquery.wookmark.js"></script>
+	<title>Clarisse Schneider - Sounds</title>
+</head>
+<body>
+	<div class="navbar">
+		<div class="header">
+			<a id="categories" href="coding.html">
+				<div class="circle" id="coding">c</div>
+				coding
+			</a>
+			<a id="categories" href="http://ca.linkedin.com/pub/clarisse-schneider/27/486/35" target="_blank">
+				<div class="circle" id="linkedin">l</div>
+				linkedin
+			</a>
+			<a id="categories" href="activities.html">
+				<div class="circle" id="activities">a</div>
+				activities
+			</a>
+			<a id="categories" href="assets/Clarisse_Schneider_Resume.pdf" target="_blank">
+				<div class="circle" id="resume">r</div>
+				resume
+			</a>
+			<a id="categories" href="info.html">
+				<div class="circle" id="info">i</div>
+				information
+			</a>
+			<a id="categories" href="http://justclary.tumblr.com" target="_blank">
+				<div class="circle" id="stories">s</div>
+				stories
+			</a>
+			<a id="categories" href="sounds.html">
+				<div id="rect"></div>
+				<div class="circle" id="sounds">s</div>
+				sounds
+			</a>
+			<a id="categories" href="education.html">
+				<div class="circle" id="education">e</div>
+				education
+			</a>
+		</div>
+	</div>
+	<div class="container" id="sounds-container">
+	    <div id="description">
+	    	Music has always been a part of my life. At the age of 4, my mother introduced me to the violin, and I was hooked on the vocal quality of its sound.<br><br>I loved the precision, the math, the beauty, the art; I was finally able to create something. I went on to perform with several orchestras, a privilege I will be forever thankful for.<br><br>Later, I learned about the power of an orchestra and the thrill of playing with others. Some of the happiest moments of my life were playing in the Toronto Symphony Youth Orchestra.<br><br>I joined a small band for two years, developing my improvisation skills and entering the world of alternative music.<br><br>Lately, I've discovered the joy of simply mixing voice with ukelele. I'm no singer, but I enjoy playing around and making people smile.<br><br>I hope you like my sounds, because that's the idea; music was made to share.
+	    </div>
+        <div id="sounds-wookmark">
+		      <iframe class="soundcloud item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F97564459&amp;color=7DC3CE&amp;auto_play=false&amp;show_artwork=false"></iframe>
+				<iframe class="soundcloud item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F100838949&amp;color=7DC3CE&amp;auto_play=false&amp;show_artwork=false"></iframe>
+		      <iframe class="soundcloud item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F100837372&amp;color=7DC3CE&amp;auto_play=false&amp;show_artwork=false"></iframe>
+		      <iframe class="soundcloud item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F100832780&amp;color=7DC3CE&amp;auto_play=false&amp;show_artwork=false"></iframe>
+		      <iframe class="soundcloud item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F56796543&amp;color=7DC3CE&amp;auto_play=false&amp;show_artwork=false"></iframe>
+		      <iframe class="soundcloud item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F42928454&amp;color=7DC3CE&amp;auto_play=false&amp;show_artwork=false"></iframe>
+		      <iframe class="soundcloud item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F42582933&amp;color=7DC3CE&amp;auto_play=false&amp;show_artwork=false"></iframe>
+	      		<iframe class="youtube item" src="http://www.youtube.com/embed/hvML5TF4IbI?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+      </div>
+  	</div>
+</body>
+<script>
+	$(document).ready(function(){
+		$(".item").wookmark( {
+			align: 'center',
+			autoResize: true,
+		  	resizeDelay: 50,
+		  	offset: 5,
+		  	container: $('#sounds-wookmark')
+		});
+	});
+</script>
+</html>
