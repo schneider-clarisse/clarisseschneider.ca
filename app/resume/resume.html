@@ -1,0 +1,167 @@
+<div class="container" id="resume-container">
+    <div id="skills">
+    	<h3>Languages</h3>
+    	<p>Fluent in:</p>
+	    <ul class="skill-group">	
+			<li class="skill" id="Java" ng-mouseenter="hover_java = true" ng-mouseleave="hover_java = false" ng-class="{hoverSkill:hover_java, activeSkill:isActiveSkill('Java')}">Java</li>
+			<li class="skill" id="PHP" ng-mouseenter="hover_php = true" ng-mouseleave="hover_php = false" ng-class="{hoverSkill:hover_php, activeSkill:isActiveSkill('PHP')}">PHP</li>
+			<li class="skill" id="HTML/CSS" ng-mouseenter="hover_html = true" ng-mouseleave="hover_html = false" ng-class="{hoverSkill:hover_html, activeSkill:isActiveSkill('HTML')}">HTML/CSS</li>
+			<li class="skill" id="jQuery" ng-mouseenter="hover_jquery = true" ng-mouseleave="hover_jquery = false" ng-class="{hoverSkill:hover_jquery, activeSkill:isActiveSkill('jQuery')}">jQuery</li>
+			<li class="skill" id="Javascript" ng-mouseenter="hover_javascript = true" ng-mouseleave="hover_javascript = false" ng-class="{hoverSkill:hover_javascript, activeSkill:isActiveSkill('Javascript')}">Javascript</li>
+			<li class="skill" id="Bootstrap" ng-mouseenter="hover_bootstrap = true" ng-mouseleave="hover_bootstrap = false" ng-class="{hoverSkill:hover_bootstrap, activeSkill:isActiveSkill('Bootstrap')}">Bootstrap</li>
+			<li class="skill" id="C" ng-mouseenter="hover_c = true" ng-mouseleave="hover_c = false" ng-class="{hoverSkill:hover_c, activeSkill:isActiveSkill('C')}">C</li>
+			<li class="skill" id="C++" ng-mouseenter="hover_cplus = true" ng-mouseleave="hover_cplus = false" ng-class="{hoverSkill:hover_cplus, activeSkill:isActiveSkill('C++')}">C++</li>
+		</ul>
+		<p>Familiar with:</p>
+	    <ul class="skill-group">	
+			<li class="skill" id="LaTeX" ng-mouseenter="hover_latex = true" ng-mouseleave="hover_latex = false" ng-class="{hoverSkill:hover_latex, activeSkill:isActiveSkill('LaTeX')}">LaTeX</li>
+			<li class="skill" id="Bash" ng-mouseenter="hover_bash = true" ng-mouseleave="hover_bash = false" ng-class="{hoverSkill:hover_bash, activeSkill:isActiveSkill('Bash')}">Bash</li>
+			<li class="skill" id="Knockout" ng-mouseenter="hover_knockout = true" ng-mouseleave="hover_knockout = false" ng-class="{hoverSkill:hover_knockout, activeSkill:isActiveSkill('Knockout')}">Knockout</li>
+			<li class="skill" id="Angular" ng-mouseenter="hover_angular = true" ng-mouseleave="hover_angular = false" ng-class="{hoverSkill:hover_angular, activeSkill:isActiveSkill('Angular')}">Angular</li>
+			<li class="skill" id="Ruby" ng-mouseenter="hover_ruby = true" ng-mouseleave="hover_ruby = false" ng-class="{hoverSkill:hover_ruby, activeSkill:isActiveSkill('Ruby')}">Ruby on Rails</li>
+		</ul>
+
+		<h3>Operating Systems</h3>
+	    <ul class="skill-group">	
+			<li class="skill" id="OS X"  ng-mouseenter="hover_osx = true" ng-mouseleave="hover_osx = false" ng-class="{hoverSkill:hover_osx, activeSkill:isActiveSkill('OS X')}">OS X</li>
+			<li class="skill" id="Windows" ng-mouseenter="hover_windows = true" ng-mouseleave="hover_windows = false" ng-class="{hoverSkill:hover_windows, activeSkill:isActiveSkill('Windows')}">Windows</li>
+		</ul>
+
+		<h3>Application Software</h3>
+	    <ul class="skill-group">	
+			<li class="skill" id="Photoshop" ng-mouseenter="hover_photoshop = true" ng-mouseleave="hover_photoshop = false" ng-class="{hoverSkill:hover_photoshop, activeSkill:isActiveSkill('Photoshop')}">Photoshop</li>
+		</ul>
+
+		<h3>Version Control</h3>
+	    <ul class="skill-group">	
+			<li class="skill" id="Git" ng-mouseenter="hover_git = true" ng-mouseleave="hover_git = false" ng-class="{hoverSkill:hover_git, activeSkill:isActiveSkill('Git')}">Git</li>
+			<li class="skill" id="Perforce" ng-mouseenter="hover_perforce = true" ng-mouseleave="hover_perforce = false" ng-class="{hoverSkill:hover_perforce, activeSkill:isActiveSkill('Perforce')}">Perforce</li>
+		</ul>
+    </div>
+    <div id="description">
+    	<div class="section">
+    		<h1 id="first">Prelude</h1>
+	    	<p>I am a Software Engineering student with a love for good design and a passion for policy. I founded a UX club when I needed an opportunity for growth, and was so fascinated with minesweeper it became my first project. I’m an ARCT violinist, hockey player, and student advocate; and I’m pleased to make your acquaintance.</p>
+	    </div>
+	    <div class="section">
+	    	<h1>Summary of Qualifications</h1>
+	    	<ul>
+	    	 	<li>Demonstrates exceptional leadership skills in many roles, including organizer of termly SE Hack Days and engineering hackathons, founder and president of the WaterlUX club, and senior executive of the Ontario Student Trustees’ Association (OSTA-AECO)</li>
+	 			<li>Excellent written and oral communication skills, shown through national-level debates, press releases, reports, proposals, and forum facilitation</li>
+	 			<li>Outstanding self-motivation, time management, and organization skills used to balance academics, music, and extra-curricular activities</li>
+	 			<li>Driven to learn with minimal instruction required, applied in self-teaching of JavaFX, Javascript, PHP, HTML/CSS, and UX practices</li>
+	    	</ul>
+	    </div>
+	    <div class="section">
+    		<h1>Projects</h1>
+    		<div class="project" id="Website" ng-class="{hoverProject:hover_website, activeProject:isActiveProject('Website')}" ng-mouseenter="hover_website = true" ng-mouseleave="hover_website = false">
+	    		<h2>Website</h2><h3>Waterloo, ON; Aug/13 – Present</h3>
+	    		<ul>
+	    			<li>Designed and created a personal website after self-teaching HTML/CSS</li>
+	 				<li>Used Wookmark and self-designed responsive handling for neat design</li>
+	    		</ul>
+	    	</div>
+	    	<div class="project" id="EngPort" ng-class="{hoverProject:hover_engport, activeProject:isActiveProject('EngPort')}" ng-mouseenter="hover_engport = true" ng-mouseleave="hover_engport = false">
+	    		<h2>EngPort</h2><h3>Waterloo, ON; Mar/14 – Apr/14</h3>
+	    		<ul>
+	    			<li>Ruby on Rails web application for Waterloo EngSoc class representatives to customize reports to their classes via pdf, facebook, and twitter</li>
+	 				<li>Product of Hack Waterloo with a three-person team, specializing specifically in creation, front-end design, and pdf export</li>
+	    		</ul>
+	    	</div>
+	    	<div class="project" id="OneBible" ng-class="{hoverProject:hover_onebible, activeProject:isActiveProject('OneBible')}" ng-mouseenter="hover_onebible = true" ng-mouseleave="hover_onebible = false">
+	    		<h2>OneBible</h2><h3>Waterloo, ON; Nov/12 – Dec/12</h3>
+	    		<ul>
+	    			<li>Designed a clean, easy-to-use, customizable interface in QML and Qt/C++</li>
+	 				<li>Worked in two-person team, specializing specifically in graphics, display, and interface</li>
+	    		</ul>
+    		</div>
+    	</div>
+    	<div class="section">
+    		<h1>Work Experience</h1>
+    		<div class="project" id="Lookout" ng-class="{hoverProject:hover_lookout, activeProject:isActiveProject('Lookout')}" ng-mouseenter="hover_lookout = true" ng-mouseleave="hover_lookout = false">
+	    		<h2>Engineering Intern, Lookout Inc</h2><h3>San Francisco, CA; Aug/14 – Dec/14</h3>
+	    		<ul>
+	    			<li>Worked on the Store team implementing changes in PHP and Javascript</li>
+				 	<li>Built UltraViolet account creation dialog flow integrated into the store</li>
+				 	<li>Integrated open-source plugin Notify.js to create a custom notification system accessible throughout the code base</li>
+				 	<li>Updated entire site from Bootstrap 2.3.2 to Bootstrap 3.1.1</li>
+	    		</ul>
+	    	</div>
+	    	<div class="project" id="Kaleidescape" ng-class="{hoverProject:hover_kaleidescape, activeProject:isActiveProject('Kaleidescape')}" ng-mouseenter="hover_kaleidescape = true" ng-mouseleave="hover_kaleidescape = false">
+	    		<h2>Software Engineering Intern, Kaleidescape</h2><h3>Waterloo, ON; Jan/13 – Apr/14</h3>
+	    		<ul>
+	    			<li>Worked on the Store team implementing changes in PHP and Javascript</li>
+				 	<li>Built UltraViolet account creation dialog flow integrated into the store</li>
+				 	<li>Integrated open-source plugin Notify.js to create a custom notification system accessible throughout the code base</li>
+				 	<li>Updated entire site from Bootstrap 2.3.2 to Bootstrap 3.1.1</li>
+	    		</ul>
+	    	</div>
+	    	<div class="project" id="Singspiel" ng-class="{hoverProject:hover_singspiel, activeProject:isActiveProject('Singspiel')}" ng-mouseenter="hover_singspiel = true" ng-mouseleave="hover_singspiel = false">
+	    		<h2>Developer Co-op, Singspiel</h2><h3>Toronto, ON; May/13 – Aug/13</h3>
+	    		<ul>
+	    			<li>Implemented user interfacing in the web-based and desktop applications, creating the store application from the ground up</li>
+				 	<li>Built interface allowing employees to interact with the company server and database</li>
+				 	<li>Redesigned the company website using Bootstrap 3.0.0</li>
+	    		</ul>
+	    	</div>
+    	</div>
+    	<div class="section">
+    		<h1>Leadership</h1>
+    		<ul>
+    			<li>President and Founder of the WaterlUX club  – <span>Waterloo, 2013-14</span></li>
+			 	<li>Engineering Society Speaker  – <span>Waterloo, 2014</span></li>
+			 	<li>Policy Director  – <span>Engineering Student Societies’ Council of Ontario, 2013-14 </span></li>
+			 	<li>Ontario Engineering Competition Debater (Champion 2014)  – <span>2013-2014</span></li>
+			 	<li>Canadian Engineering Competition Debater  – <span>2014</span></li>
+			 	<li>SE Hack Day Organizer and EngHack director  – <span>Waterloo, 2013-2014</span></li>
+			 	<li>Engineering Society Class Representative  – <span>Waterloo, 2012-14</span></li>
+			 	<li>Ontario Student Trustees’ Association Senior Executive  – <span>2011-2012</span></li>
+			 	<li>Student Trustee  – <span>Halton Catholic District School Board, 2010-2012</span></li>
+			 	<li>Shad Valley Team President  – <span>Lakehead, 2011</span></li>
+			 	<li>Regional Representative and Team Leader  – <span>ECOO, 2011</span></li>
+    		</ul>
+    	</div>
+    	<div class="section">
+    		<h1>Scholarships</h1>
+    		<ul>
+    			<li>
+    				Allstream ICT Engineering Scholarship  -
+    				<span>Canadian Engineering Memorial Foundation, 2014</span>
+    				<h4>Awarded for acting as role models and promoting ICT to young women in engineering</h4>
+    			</li>
+    			<li>
+    				 Software Engineering Entrance Scholarship  -
+    				<span>Scotiabank, 2012</span>
+    			</li>
+    			<li>
+    				Mildred Allworth Award  -
+    				<span>Canadian Federation of University Women, 2012</span>
+    				<h4>Awarded for high academics, extracurricular activities, and volunteer service</h4>
+    			</li>
+    			<li>
+    				Alumni Award  -
+    				<span>Ontario Student Trustees’ Association, 2012</span>
+    				<h4>Awarded to a student trustee for leadership, innovation, cooperation, and perseverance</h4>
+    			</li>
+    			<li>
+    				Lieutenant Governor’s Community Volunteer Award for Students  -
+    				<span>2012</span>
+    				<h4>Awarded for going above and beyond volunteer hours required to graduate</h4>
+    			</li>
+    			<li>
+    				Chancellor’s Scholarship  -
+    				<span>Queen’s University, Kingston, ON, 2012</span>
+    				<h4>Awarded for superior academic ability, creative/original thinking, and leadership</h4>
+    			</li>
+    		</ul>
+    	</div>
+    	<div class="section">
+    		<h1>Activities & Interests</h1>
+    		<ul>
+    			<li>Enjoys playing classical violin in the Toronto Symphony Youth Orchestra for 3 years and as a soloist with various orchestras</li>
+    			<li>Demonstrates teamwork in 12+ years of house-league ice hockey</li>
+    			<li>Loves Tumblr, Doctor Who, and sarcastic social media</li>
+    		</ul>
+    	</div>
+  	</div>
+</div>

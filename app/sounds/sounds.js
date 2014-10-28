@@ -16,8 +16,8 @@ angular.module('myApp.sounds', ['ngRoute'])
     
     function initWookmark(){
         angular.element('.item').wookmark( {
-			align: 'center',
-			autoResize: true,
+  			align: 'center',
+  			autoResize: true,
 		  	resizeDelay: 50,
 		  	offset: 5,
 		  	container: angular.element('#sounds-wookmark')

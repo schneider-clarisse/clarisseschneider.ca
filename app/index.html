@@ -13,9 +13,8 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="assets/css/app.css">
   <link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -30,16 +29,18 @@
         <div class="circle" id="coding">c</div>
         coding
       </a>
-      <a id="categories" href="http://ca.linkedin.com/pub/clarisse-schneider/27/486/35" target="_blank">
-        <div class="circle" id="linkedin">l</div>
-        linkedin
+      <a id="categories" href="#/links">
+        <div ng-class="path === 'links' ? 'rect' : ''" id="links-rect"></div>
+        <div class="circle" id="links">l</div>
+        links
       </a>
       <a id="categories" href="#/activities">
         <div ng-class="path === 'activities' ? 'rect' : ''" id="activities-rect"></div>
         <div class="circle" id="activities">a</div>
         activities
       </a>
-      <a id="categories" href="assets/Clarisse_Schneider_Resume.pdf" target="_blank">
+      <a id="categories" href="#/resume">
+        <div ng-class="path === 'resume' ? 'rect' : ''" id="resume-rect"></div>
         <div class="circle" id="resume">r</div>
         resume
       </a>
@@ -48,7 +49,8 @@
         <div class="circle" id="info">i</div>
         information
       </a>
-      <a id="categories" href="http://justclary.tumblr.com" target="_blank">
+      <a id="categories" href="#/stories">
+      <div ng-class="path === 'stories' ? 'rect' : ''" id="stories-rect"></div>
         <div class="circle" id="stories">s</div>
         stories
       </a>
@@ -78,8 +80,11 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
   <script src="coding/coding.js"></script>
+  <script src="links/links.js"></script>
   <script src="activities/activities.js"></script>
+  <script src="resume/resume.js"></script>
   <script src="info/info.js"></script>
+  <script src="stories/stories.js"></script> 
   <script src="sounds/sounds.js"></script> 
   <script src="education/education.js"></script>
   <script src="components/version/version.js"></script>

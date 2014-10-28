@@ -4,8 +4,11 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.coding',
+  'myApp.links',
   'myApp.activities',
+  'myApp.resume',
   'myApp.info',
+  'myApp.stories',
   'myApp.sounds',
   'myApp.education',
   'myApp.version'

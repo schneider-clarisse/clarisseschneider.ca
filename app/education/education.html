@@ -1,68 +1,20 @@
 <div class="container" id="education-container">
-	   <div class="row">
-			<div class="head">
-				<a href="#hide1" class="hide" id="hide1" style="background-color:#7DC3CE"><h4>1A</h4></a> 
-				<a href="#show1" class="show" id="show1" style="background-color:#7DC3CE"><h4>1A</h4></a><h1>January 2013 - April 2013</h1>
-				<div class="list">
-				<ul>
-					<li><h2>CS 138</h2><h3>Introduction to Data Abstraction and Implementation</h3></li>
-					<li><h2>ECE 106</h2><h3>Physics of Electrical Engineering 2</h3></li>
-					<li><h2>ECE 124</h2><h3>Digital Circuits and Systems</h3></li>
-					<li><h2>MATH 119</h2><h3>Calculus 2 for Engineering</h3></li>
-					<li><h2>MATH 135</h2><h3>Algebra for Honours Mathematics</h3></li>
-				</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="head">
-				<br>
-				<a href="#hide2" class="hide" id="hide2" style="background-color:#7DC3CE"><h4>1B</h4></a> 
-				<a href="#show2" class="show" id="show2" style="background-color:#7DC3CE"><h4>1B</h4></a><h1>September 2012 - December 2012</h1>
-				<div class="list">
-				<ul>
-					<li><h2>CS 137</h2><h3>Programming Principles</h3></li>
-					<li><h2>ECE 105</h2><h3>Physics of Electrical Engineering 1</h3></li>
-					<li><h2>ECE 140</h2><h3>Linear Circuits</h3></li>
-					<li><h2>MATH 115</h2><h3>Linear Algebra for Engineering</h3></li>
-					<li><h2>MATH 117</h2><h3>Calculus 1 for Engineering</h3></li>
-					<li><h2>SE 101</h2><h3>Introduction to Methods of Software Engineering</h3></li>
-				</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="head">
-				<br>
-				<a href="#hide3" class="hide" id="hide3" style="background-color:#7DC3CE"><h4>2A</h4></a> 
-				<a href="#show3" class="show" id="show3" style="background-color:#7DC3CE"><h4>2A</h4></a><h1>September 2013 - December 2013</h1>
-				<div class="list">
-				<ul>
-					<li><h2>CS 241</h2><h3>Foundations of Sequential Programming</h3></li>
-					<li><h2>ECE 222</h2><h3>Digital Computers</h3></li>
-					<li><h2>SE 212</h2><h3>Logic and Computation</h3></li>
-					<li><h2>STAT 206</h2><h3>Statistics for Software Engineers</h3></li>
-					<li><h2>CHE 102</h2><h3>Chemistry for Engineers</h3></li>
-					<li><h2>MUSIC 140</h2><h3>Pop Music and Culture</h3></li>
-				</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="head">
-				<br>
-				<a href="#hide4" class="hide" id="hide4" style="background-color:#7DC3CE"><h4>2B</h4></a> 
-				<a href="#show4" class="show" id="show4" style="background-color:#7DC3CE"><h4>2B</h4></a><h1>May 2014 - August 2014</h1>
-				<div class="list">
-				<ul>
-					<li><h2>CS 240</h2><h3>Data Structures and Data Algorithms</h3></li>
-					<li><h2>CS 247</h2><h3>Software Engineering Principles</h3></li>
-					<li><h2>MATH 213</h2><h3>Advanced Math for Software Engineers</h3></li>
-					<li><h2>MATH 239</h2><h3>Intro to Combinatorics</h3></li>
-					<li><h2>MSCI 261</h2><h3>Engineering Economics</h3></li>
-					<li id="last"><h2>SPCOM 223</h2><h3>Public Speaking</h3></li>
-				</ul>
-				</div>
-			</div>
-		</div>
-  	</div>
+	<div id="tab-container">
+		<ul id="tabs" ng-init="tab='2B'">
+			<a href class="tab" ng-repeat="term in terms" ng-click="onClickTab(term.term)" ng-class="{active:isActiveTab(term.term)}">
+				<li>
+					<h2 ng-bind="term.term"></h2>
+					<div class="date">
+						<p>{{term.start_date}} -</p>
+						<p>{{term.end_date}} {{term.year}}</p>
+					</div>
+				</li>
+			</a>
+		</ul>
+		<ul id="courses" ng-repeat="term in terms" ng-show="isActiveTab(term.term)">
+			<li class="course-info" ng-repeat="course in term.courses">
+				<h2 ng-bind="course.code"></h2><h3 ng-bind="course.name"></h3>
+			</li>
+		</ul>
+	</div>
+</div>
