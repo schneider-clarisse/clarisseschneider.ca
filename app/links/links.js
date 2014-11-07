@@ -9,20 +9,5 @@ angular.module('myApp.links', ['ngRoute'])
   });
 }])
 
-.controller('LinksCtrl', ['$timeout', function($timeout) {
-	function init(){
-        $timeout(initWookmark, 0);
-     }
-    
-    function initWookmark(){
-        angular.element('.link').wookmark( {
-			align: 'center',
-			autoResize: true,
-		  	resizeDelay: 50,
-		  	offset: 15,
-		  	container: angular.element('#links-wookmark')
-        });
-    }
-    
-    init();
+.controller('LinksCtrl', [function() {
 }]);

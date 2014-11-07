@@ -23,7 +23,10 @@
 </head>
 <body>
   <div class="navbar" ng-controller="NavBarController">
-    <div class="header">
+    <div class="header" id="mobile-nav" ng-show="isMobile" ng-hide="!isMobile || path === 'home'">
+      <a href="#/home"><img src="assets/img/circle-back.png"><h3>Back</h3></a>
+    </div>
+    <div class="header" ng-hide="isMobile">
       <a id="categories" href="#/coding">
         <div ng-class="path === 'coding' ? 'rect' : ''" id="circle-rect"></div>
         <div class="circle" id="coding">c</div>
@@ -71,7 +74,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div ng-view></div>
+  <div class="view" ng-view></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -87,8 +90,6 @@
   <script src="stories/stories.js"></script> 
   <script src="sounds/sounds.js"></script> 
   <script src="education/education.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+  <script src="home/home.js"></script>
 </body>
 </html>
