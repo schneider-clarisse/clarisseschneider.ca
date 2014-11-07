@@ -315,6 +315,10 @@ button:hover {
 }
 
 #resume-container {
+	#mobile-container {
+		display: none;
+		padding: 0 30px;
+	}
 	#skills {
 		width: 200px;
 		float: left;
@@ -353,6 +357,11 @@ button:hover {
 		float: right;
 		padding-left: 240px;
 		padding-bottom: 50px;
+
+		button {
+			float: right;
+			margin: 5px 0 10px;
+		}
 
 		li {
 			list-style: none;
@@ -403,6 +412,11 @@ button:hover {
 
   		#first {
   			margin-top: 0 !important;
+  			float: left;
+  		}
+
+  		#prelude-description {
+  			clear: both;
   		}
 	}
 }
@@ -654,6 +668,10 @@ button:hover {
 			}
 		}
 	}
+
+	#stories-container {
+		padding-top: 0 !important;
+	}
 }
 
 @media only screen and (max-width: 1000px){
@@ -789,9 +807,23 @@ button:hover {
 	}
 	#stories-container {
 		text-align: center;
-		padding: 100px 30px 40px 30px !important;
+		padding: 100px 30px 40px 30px;
 	}
 	#education-container {
+	}
+}
+
+@media only screen and (max-width: 700px){
+	#resume-container {
+		text-align: center;
+
+		#mobile-container {
+			display: inline-block;
+		}
+
+		#skills, #description {
+			display: none;
+		}
 	}
 }
 
