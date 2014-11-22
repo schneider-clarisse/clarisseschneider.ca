@@ -275,6 +275,7 @@ button:hover {
   box-shadow: 0px 0px 0px 2px #7DC3CE;
 }
 #resume-container #mobile-container {
+  display: none;
   padding: 0 30px;
 }
 #resume-container #skills {
