@@ -23,10 +23,10 @@
 </head>
 <body>
   <div class="navbar" ng-controller="NavBarController">
-    <div class="header" id="mobile-nav" ng-show="isMobile" ng-hide="!isMobile || path === 'home'">
+    <div class="header" id="mobile-nav" ng-cloak ng-show="isMobile" ng-hide="!isMobile || path === 'home'">
       <a href="#/home"><img src="assets/img/circle-back.png"><h3>Back</h3></a>
     </div>
-    <div class="header" ng-hide="isMobile">
+    <div class="header" ng-cloak ng-hide="isMobile">
       <a id="categories" href="#/coding">
         <div ng-class="path === 'coding' ? 'rect' : ''" id="circle-rect"></div>
         <div class="circle" id="coding">c</div>
