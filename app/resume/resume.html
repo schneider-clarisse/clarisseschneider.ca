@@ -17,6 +17,7 @@
 			<li class="skill" id="Bootstrap" ng-mouseenter="hover_bootstrap = true" ng-mouseleave="hover_bootstrap = false" ng-class="{hoverSkill:hover_bootstrap, activeSkill:isActiveSkill('Bootstrap')}">Bootstrap</li>
 			<li class="skill" id="C" ng-mouseenter="hover_c = true" ng-mouseleave="hover_c = false" ng-class="{hoverSkill:hover_c, activeSkill:isActiveSkill('C')}">C</li>
 			<li class="skill" id="C++" ng-mouseenter="hover_cplus = true" ng-mouseleave="hover_cplus = false" ng-class="{hoverSkill:hover_cplus, activeSkill:isActiveSkill('C++')}">C++</li>
+			<li class="skill" id="Objective-C" ng-mouseenter="hover_cplus = true" ng-mouseleave="hover_objectivec = false" ng-class="{hoverSkill:hover_objectivec, activeSkill:isActiveSkill('Objective-C')}">Objective-C</li>
 		</ul>
 		<p>Familiar with:</p>
 	    <ul class="skill-group">	
@@ -41,6 +42,7 @@
 		<h3>Version Control</h3>
 	    <ul class="skill-group">	
 			<li class="skill" id="Git" ng-mouseenter="hover_git = true" ng-mouseleave="hover_git = false" ng-class="{hoverSkill:hover_git, activeSkill:isActiveSkill('Git')}">Git</li>
+			<li class="skill" id="Mercurial" ng-mouseenter="hover_mercurial = true" ng-mouseleave="hover_mercurial = false" ng-class="{hoverSkill:hover_mercurial, activeSkill:isActiveSkill('Mercurial')}">Mercurial</li>
 			<li class="skill" id="Perforce" ng-mouseenter="hover_perforce = true" ng-mouseleave="hover_perforce = false" ng-class="{hoverSkill:hover_perforce, activeSkill:isActiveSkill('Perforce')}">Perforce</li>
 		</ul>
     </div>
@@ -51,16 +53,14 @@
 	    	<p id="prelude-description">I am a Software Engineering student with a love for good design and a passion for policy. I founded a UX club when I needed an opportunity for growth, and was so fascinated with minesweeper it became my first project. I’m an ARCT violinist, hockey player, and student advocate; and I’m pleased to make your acquaintance.</p>
 	    </div>
 	    <div class="section">
-	    	<h1>Summary of Qualifications</h1>
-	    	<ul>
-	    	 	<li>Demonstrates exceptional leadership skills in many roles, including organizer of termly SE Hack Days and engineering hackathons, founder and president of the WaterlUX club, and senior executive of the Ontario Student Trustees’ Association (OSTA-AECO)</li>
-	 			<li>Excellent written and oral communication skills, shown through national-level debates, press releases, reports, proposals, and forum facilitation</li>
-	 			<li>Outstanding self-motivation, time management, and organization skills used to balance academics, music, and extra-curricular activities</li>
-	 			<li>Driven to learn with minimal instruction required, applied in self-teaching of JavaFX, Javascript, PHP, HTML/CSS, and UX practices</li>
-	    	</ul>
-	    </div>
-	    <div class="section">
     		<h1>Work Experience</h1>
+    		<div class="project" id="Facebook" ng-class="{hoverProject:hover_facebook, activeProject:isActiveProject('Facebook')}" ng-mouseenter="hover_facebook = true" ng-mouseleave="hover_facebook = false">
+			    <h2>Engineering Intern, Facebook</h2><h3>Seattle, WA; May/15 – Aug/15</h3>
+			    <ul>
+			      <li>Planned and executed a heavy refactor of the WebRTC Engine, impacting tens of millions of calls a day.</li>
+			      <li>Implemented feature for VoIP calling, creating capability within the engine as well as building the front end for iOS, expected to increase call volume in the scale of millions per day.</li>
+			    </ul>
+			</div>
     		<div class="project" id="Lookout" ng-class="{hoverProject:hover_lookout, activeProject:isActiveProject('Lookout')}" ng-mouseenter="hover_lookout = true" ng-mouseleave="hover_lookout = false">
 	    		<h2>Engineering Intern, Lookout Inc</h2><h3>San Francisco, CA; Aug/14 – Dec/14</h3>
 	    		<ul>
@@ -105,17 +105,26 @@
 	    		</ul>
 	    	</div>
     	</div>
+	    <div class="section">
+	    	<h1>Soft Skills</h1>
+	    	<ul>
+	    	 	<li>Demonstrates exceptional leadership skills in many roles, including sole founding and organization of Waterloo EngHack, organizer of termly SE Hack Days, founder and president of the WaterlUX club, marketing director for the nation-wide Conference on Diversity in Engineering, and senior executive of the Ontario Student Trustees’ Association (OSTA-AECO).</li>
+			    <li>Excellent written and oral communication skills, shown through national-level debates, press releases, reports, proposals, and forum facilitation.</li>
+			    <li>Outstanding self-motivation, time management, and organization skills used to balance academics, music, and a plethora of extra-curricular activities.</li>
+			    <li>Driven to learn with minimal instruction required, applied in self-teaching of Objective-C, JavaFX, Javascript, PHP, HTML/CSS, Angular, and UX best practices.</li>
+	    	</ul>
+	    </div>
     	<div class="section">
     		<h1>Leadership</h1>
     		<ul>
-    			<li>President and Founder of the WaterlUX club  – <span>Waterloo, 2013-14</span></li>
-    			<li>Engineering Ambassador director  – <span>Waterloo, 2014</span></li>
-			 	<li>Engineering Society Speaker  – <span>Waterloo, 2014</span></li>
-			 	<li>Policy Director  – <span>Engineering Student Societies’ Council of Ontario, 2013-14 </span></li>
+    			<li>President and Founder of the WaterlUX club  – <span>Waterloo, 2013-2014</span></li>
+    			<li>Engineering Ambassador Director  – <span>Waterloo, 2014-2015</span></li>
+			 	<li>Engineering Society Speaker  – <span>Waterloo, 2014-2015</span></li>
+			 	<li>Policy Director  – <span>Engineering Student Societies’ Council of Ontario, 2013-2014 </span></li>
 			 	<li>Ontario Engineering Competition Debater (Champion 2014)  – <span>2013-2014</span></li>
 			 	<li>Canadian Engineering Competition Debater  – <span>2014</span></li>
-			 	<li>SE Hack Day Organizer and EngHack director  – <span>Waterloo, 2013-2014</span></li>
-			 	<li>Engineering Society Class Representative  – <span>Waterloo, 2012-14</span></li>
+			 	<li>SE Hack Day Organizer and EngHack director  – <span>Waterloo, 2013-2015</span></li>
+			 	<li>Engineering Society Class Representative  – <span>Waterloo, 2012-2015</span></li>
 			 	<li>Ontario Student Trustees’ Association Senior Executive  – <span>2011-2012</span></li>
 			 	<li>Student Trustee  – <span>Halton Catholic District School Board, 2010-2012</span></li>
 			 	<li>Shad Valley Team President  – <span>Lakehead, 2011</span></li>
@@ -155,8 +164,8 @@
     		<h1>Activities & Interests</h1>
     		<ul>
     			<li>Earned ARCT as a classical violinist, playing in the Toronto Symphony Youth Orchestra for 3 years and as a soloist with various orchestras</li>
-    			<li>Takes it to the ice with 14+ years experience of house-league and intermural ice hockey</li>
-    			<li>Loves Tumblr, Doctor Who, various other nerd cultures, and sarcastic social media</li>
+    			<li>Takes it to the ice with 15+ years experience of house-league and intermural ice hockey</li>
+    			<li>Loves Doctor Who, various other nerd cultures, sarcastic social media, and two-page resumes</li>
     		</ul>
     	</div>
   	</div>
