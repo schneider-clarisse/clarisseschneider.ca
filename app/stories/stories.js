@@ -9,18 +9,27 @@ angular.module('myApp.stories', ['ngRoute'])
   });
 }])
 
-.controller('StoriesCtrl', ['$http', '$scope', '$sce', 
+.controller('StoriesCtrl', ['$http', '$scope', '$sce',
 	function($http, $scope, $sce) {
 		var getLatestPost = function() {
 			$scope.post = {};
-			
-			$http.jsonp('http://justclary.tumblr.com/api/read/json?callback=JSON_CALLBACK&type=text')
-			.success(function(response) {
-				console.log('retrieved post');
-				$scope.post.title = response.posts[0]['regular-title'];
-				$scope.post.body  = $sce.trustAsHtml(response.posts[0]['regular-body']);
-			})
-			.error(function(response) {
+
+			$http({url: 'http://cors.io/?u=http://medium.com/@claryschneider'})
+			.success(function(data) {
+				var profile_page = $("<div></div>");
+				profile_page.html(data);
+
+				var featured_post_url = $('.js-featuredPostBlock', profile_page).find('.blockDivider-name').attr('href');
+				featured_post_url = featured_post_url.substring(featured_post_url.indexOf('medium'));
+
+				$http({url: "http://cors.io/?u=http://" + featured_post_url})
+				.success(function(data) {
+					var article = $("<div></div>");
+					article.html(data);
+
+					$scope.post.title = $("[name='title']", article).attr('content');
+					$scope.post.body = $sce.trustAsHtml($(".section-content", article).html());
+				});
 			});
 	}
 
