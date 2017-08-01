@@ -148,6 +148,21 @@ button:hover {
   background-size: cover;
   background-position: center center;
 }
+#coding-container .project .description#facebook2 {
+  background-image: url("../img/facebook.png");
+}
+#coding-container .project .description#facebook1 {
+  background-image: url("../img/messenger.jpg");
+}
+#coding-container .project .description#calligre {
+  background-image: url("../img/calligre.png");
+}
+#coding-container .project .description#google {
+  background-image: url("../img/google.jpg");
+}
+#coding-container .project .description#lookout {
+  background-image: url("../img/lookout.png");
+}
 #coding-container .project .description#waterlux {
   background-image: url("../img/waterlux.jpg");
 }
