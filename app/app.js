@@ -9,10 +9,9 @@ angular.module('myApp', [
   'myApp.resume',
   'myApp.info',
   'myApp.stories',
-  'myApp.sounds',
+  'myApp.snaps',
   'myApp.education',
   'myApp.home',
-  'myApp.lara'
 ]).
 config(['$routeProvider', function($routeProvider) {
   var isMobile = {

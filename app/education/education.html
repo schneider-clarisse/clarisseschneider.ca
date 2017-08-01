@@ -1,20 +1,52 @@
 <div class="container" id="education-container">
-	<div id="tab-container">
-		<ul id="tabs" ng-init="tab='2B'">
-			<a href class="tab" ng-repeat="term in terms" ng-click="onClickTab(term.term)" ng-class="{active:isActiveTab(term.term)}">
-				<li>
-					<h2 ng-bind="term.term"></h2>
-					<div class="date">
-						<p>{{term.start_date}} -</p>
-						<p>{{term.end_date}} {{term.year}}</p>
-					</div>
-				</li>
-			</a>
-		</ul>
-		<ul id="courses" ng-repeat="term in terms" ng-show="isActiveTab(term.term)">
-			<li class="course-info" ng-repeat="course in term.courses">
-				<h2 ng-bind="course.code"></h2><h3 ng-bind="course.name"></h3>
-			</li>
-		</ul>
-	</div>
+	<div class="school-container">
+	    <h2>University of Waterloo</h2>
+        <div class="info">
+            <p>Software Engineering</p>
+            <p>Graduated 2017</p>
+        </div>
+    </div>
+    <h2 id="favourite">Favourite Courses</h2>
+    <ul id="courses">
+        <li class="course-info">
+            <h2>CHINA 102R</h2><h3>First-Year Chinese 2</h3><h3 class="term">4B</h3>
+        </li>
+        <li class="course-info">
+            <h2>CS 458</h2><h3>Computer Security and Privacy</h3><h3 class="term">4B</h3>
+        </li>
+        <li class="course-info">
+            <h2>CHINA 101R</h2><h3>First-Year Chinese 1</h3><h3 class="term">4A</h3>
+        </li>
+        <li class="course-info">
+            <h2>ECE 454</h2><h3>Distributed Computing</h3><h3 class="term">4A</h3>
+        </li>
+        <li class="course-info">
+            <h2>CS 343</h2><h3>Concurrent and Parallel Programming</h3><h3 class="term">3B</h3>
+        </li>
+        <li class="course-info">
+            <h2>CS 349</h2><h3>User Interfaces</h3><h3 class="term">3A</h3>
+        </li>
+        <li class="course-info">
+            <h2>MATH 239</h2><h3>Introduction to Combinatorics</h3><h3 class="term">2B</h3>
+        </li>
+        <li class="course-info">
+            <h2>CS 247</h2><h3>Software Engineering Principles</h3><h3 class="term">2B</h3>
+        </li>
+        <li class="course-info">
+            <h2>SPCOM 223</h2><h3>Public Speaking</h3><h3 class="term">2B</h3>
+        </li>
+        <li class="course-info">
+            <h2>ECE 222</h2><h3>Digital Computers</h3><h3 class="term">2A</h3>
+        </li>
+        <li class="course-info">
+            <h2>MUSIC 140</h2><h3>Pop Music and Culture</h3><h3 class="term">2A</h3>
+        </li>
+    </ul>
+	<div class="school-container">
+	    <h2>Royal Conservatory of Music</h2>
+        <div class="info">
+            <p>ARCT Performers</p>
+            <p>Graduated 2013</p>
+        </div>
+    </div>
 </div>

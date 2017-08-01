@@ -478,177 +478,151 @@ button:hover {
 }
 
 #stories-container {
-	#blog-link-wrapper {
-		text-align: center;
-	}
+    #post-container {
+        text-align: center;
+    }
+
+    .blog-post {
+        width: 300px;
+        margin: 20px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .blog-content {
+        padding: 15px 28px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+
+		h4 {
+            margin: 20px 0;
+            letter-spacing: 1px;
+
+            a {
+              color: #333;
+            }
+        }
+
+        .post-meta {
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            border-bottom: 1px solid #F5F5F5;
+
+            span {
+                color: #CCC;
+
+                &:first-child {
+                    a {
+                        color: #848484;
+                    }
+                }
+
+                a {
+                    color: #CCC;
+                    border-bottom: 1px rgba(0, 0, 0, 0);
+                }
+
+                a:hover {
+                    text-decoration: none;
+                    border-bottom-style: solid;
+                    border-color: inherit;
+                }
+            }
+        }
+
+        .post-meta span {
+            padding-right: 10px;
+            border-right: 1px solid #CCC;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+                border-right: 0;
+                padding-right: 0;
+            }
+        }
+
+        p {
+            color: #67666a;
+            line-height: 22px;
+        }
+    }
+
+    #blog-link-wrapper {
+        clear: both;
+        text-align: center;
+    }
 }
 
-#sounds-container {
-	#description {
-		width: 30%;
-		max-width: 500px;
-		float: left;
-		text-align: right;
-		font-family: 'Open Sans', sans-serif;
-	}
-	#sounds-wookmark {
-		width: 65%;
-		float: right;
-		text-align: center;
-		position: relative;
+#snaps-container {
+    text-align: center;
 
-		.item {
-			z-index: 0;
-			width: 48%;
-			max-width: 500px;
-		}
-		.youtube {
-			height: 350px;
-		}
-	}
+    #instafeed {
+        img {
+            margin: 5px;
+        }
+    }
 }
 
 #education-container {
-	li {
-		list-style: none;
-	}
-	a {
-		text-decoration: none;
-	}
-	#tab-container {
-		width: 100%;
-		max-width: 700px;
-		margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 
-		#tabs {
-			width: 100%;
-			padding: 0;
-			margin: 0;
+    .school-container {
+        background-color: #7DC3CE;
+        color: white;
+        font-family: 'Open Sans' sans-serif !important;
+        display: flex;
+        align-items: center;
 
-			.tab {
-				width: 25%;
-				background-color: #7DC3CE;
-				color: white;
-				display: inline-block;
-				margin: 0;
+        h2 {
+            margin: 0 20px;
+        }
 
-				a {
-					font-family: 'Open Sans' sans-serif !important;
-				}
-				li {
-					height: 100%;
-				}
-				h2 {
-					margin: 0;
-					font-size: 3em;
-					float: left;
-					width: 48%;
-					text-align: right;
-					padding-right: 2%;
-					font-family: "Ubuntu" !important;
-					font-weight: 400;
-				}
+        .info {
+            flex: 1;
+            background-color: #61A3A5;
+            padding: 20px;
+            p {
+              margin: 0;
+            }
+        }
+    }
 
-				.date {
-					padding-top: 10px;
-					padding-left: 2%;
-					width: 48%;
-					float: right;
+    #favourite {
+        margin: 40px 40px 0;
+    }
 
-					p {
-						font-family: "Open Sans" !important;
-						width: auto;
-						margin: 0;
-						clear: right;
-					}
-				}
-			}
-			.active {
-				background-color: #61A3A5;
-			}
-		}
+    #courses {
+      list-style: none;
 
-		#courses {
-			.course-info {
-				h2,h3 {
-					display: inline-block;
-				}
-				h2 {
-					font-size: 20px !important;
-					font-family: "Ubuntu" !important;
-				}
-				h3 {
-					font-size: 14px !important;
-					font-family: 'Ubuntu', sans-serif;
-					font-weight: 300;
-					padding-left: 30px;
-				}
-			}
-		}
-	}
-}
-
-#lara-container {
-	text-align: center;
-
-	a {
-		text-decoration: none;
-		color: black;
-		font-family: 'Ubuntu';
-	}
-
-	.link {
-		z-index: 0;
-		height: 300px;
-		width: 300px;
-		position: relative;
-		display: inline-block;
-		background-size: cover;
-		text-align: center;
-		margin: 20px;
-
-		img {
-			width: 100%;
-			border-radius: 0;
-			-webkit-transition: border-radius 0.2s ease-in-out;
-		    -moz-transition: border-radius 0.2s ease-in-out;
-		    transition: border-radius 0.2s ease-in-out;
-		}
-
-		.info {
-			border-radius: 50%;
-			background-color: rgba(255, 255, 255, 0.8);
-			width: 60%;
-			height: 60%;
-			margin: 20%;
-			text-align: center;
-			opacity: 0;
-			position: absolute;
-			display: flex;
-			align-content: center;
-			justify-content: center;
-			-webkit-transition: opacity 0.2s ease-in-out;
-		    -moz-transition: opacity 0.2s ease-in-out;
-		    transition: opacity 0.2s ease-in-out;
-
-		    p {
-		    	align-self: center;
-		    	padding: 20px;
-		    }
-		}
-	}
-	.link:hover {
-		img {
-			border-radius: 50%;
-		}
-
-		.info {
-			opacity: 1;
-		}
-	}
-	.hint {
-		display: none;
-	}
+        .course-info {
+            h2,h3 {
+                display: inline-block;
+            }
+            h2 {
+                font-size: 20px !important;
+                font-family: "Ubuntu" !important;
+            }
+            h3 {
+                font-size: 14px !important;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: 300;
+                padding-left: 30px;
+            }
+            .term {
+                float: right;
+                margin-right: 40px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-device-width: 1024px){
