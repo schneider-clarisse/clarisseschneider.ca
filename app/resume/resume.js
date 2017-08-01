@@ -47,7 +47,15 @@ angular.module('myApp.resume', ['ngRoute'])
 		skills: [ 'HTML/CSS', 'C++', 'OS X' ]
 	},
 	{
-		name: "Facebook",
+		name: "Facebook2",
+		skills: [ 'Java', 'Mercurial', 'OS X' ]
+	},
+	{
+		name: "Google",
+		skills: [ 'Java', 'Swift', 'FOAM', 'OS X' ]
+	},
+	{
+		name: "Facebook1",
 		skills: [ 'Java', 'Objective-C', 'C', 'C++', 'Mercurial', 'OS X' ]
 	},
 	{

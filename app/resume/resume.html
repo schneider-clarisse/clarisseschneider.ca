@@ -1,6 +1,6 @@
 <div class="container" id="resume-container">
 	<div id="mobile-container">
-		<p>I am a Software Engineering student with a love for good design and a passion for policy. I founded a UX club when I needed an opportunity for growth, and was so fascinated with minesweeper it became my first project. I’m an ARCT violinist, hockey player, and student advocate; and I’m pleased to make your acquaintance.</p>
+		<p>I am a University of Waterloo Software Engineering graduate with a love for good design and a passion for policy. I’m an ARCT violinist, hockey player, and student advocate; and I’m pleased to make your acquaintance.</p>
 
 		<h3>Please download my resume below for more details.</h3>
 		<a href="assets/pdf/resume.pdf" download><button id="download">Download</button></a>
@@ -18,9 +18,11 @@
 			<li class="skill" id="C" ng-mouseenter="hover_c = true" ng-mouseleave="hover_c = false" ng-class="{hoverSkill:hover_c, activeSkill:isActiveSkill('C')}">C</li>
 			<li class="skill" id="C++" ng-mouseenter="hover_cplus = true" ng-mouseleave="hover_cplus = false" ng-class="{hoverSkill:hover_cplus, activeSkill:isActiveSkill('C++')}">C++</li>
 			<li class="skill" id="Objective-C" ng-mouseenter="hover_cplus = true" ng-mouseleave="hover_objectivec = false" ng-class="{hoverSkill:hover_objectivec, activeSkill:isActiveSkill('Objective-C')}">Objective-C</li>
+			<li class="skill" id="Swift" ng-mouseenter="hover_swift = true" ng-mouseleave="hover_swift = false" ng-class="{hoverSkill:hover_swift, activeSkill:isActiveSkill('Swift')}">Swift</li>
 		</ul>
 		<p>Familiar with:</p>
 	    <ul class="skill-group">	
+			<li class="skill" id="FOAM" ng-mouseenter="hover_foam = true" ng-mouseleave="hover_foam = false" ng-class="{hoverSkill:hover_foam, activeSkill:isActiveSkill('Foam')}">FOAM</li>
 			<li class="skill" id="LaTeX" ng-mouseenter="hover_latex = true" ng-mouseleave="hover_latex = false" ng-class="{hoverSkill:hover_latex, activeSkill:isActiveSkill('LaTeX')}">LaTeX</li>
 			<li class="skill" id="Bash" ng-mouseenter="hover_bash = true" ng-mouseleave="hover_bash = false" ng-class="{hoverSkill:hover_bash, activeSkill:isActiveSkill('Bash')}">Bash</li>
 			<li class="skill" id="Knockout" ng-mouseenter="hover_knockout = true" ng-mouseleave="hover_knockout = false" ng-class="{hoverSkill:hover_knockout, activeSkill:isActiveSkill('Knockout')}">Knockout</li>
@@ -54,7 +56,23 @@
 	    </div>
 	    <div class="section">
     		<h1>Work Experience</h1>
-    		<div class="project" id="Facebook" ng-class="{hoverProject:hover_facebook, activeProject:isActiveProject('Facebook')}" ng-mouseenter="hover_facebook = true" ng-mouseleave="hover_facebook = false">
+    		<div class="project" id="Facebook2" ng-class="{hoverProject:hover_facebook2, activeProject:isActiveProject('Facebook2')}" ng-mouseenter="hover_facebook2 = true" ng-mouseleave="hover_facebook2 = false">
+			    <h2>Engineering Intern, Facebook</h2><h3>Seattle, WA; Aug/16 – Dec/16</h3>
+			    <ul>
+                   	<li>Added Messenger SMS support for phones with Dual SIM capability (1 in 4 Android users globally), the scope of which included running design meetings, implementing the feature, supporting through a controlled rollout, and analyzing results.</li>
+				   	<li>Enabled forwarding capabilities between Messenger and SMS threads as well as sharing from external applications into SMS threads, resulting in a significant increase of SMS send participation.</li>
+					<li>Led a team for an internal hackathon and fully implemented the Android scope of the feature, where the project was selected to be presented to Mark Zuckerberg and shipped to production.</li>
+			    </ul>
+			</div>
+    		<div class="project" id="Google" ng-class="{hoverProject:hover_google, activeProject:isActiveProject('Google')}" ng-mouseenter="hover_google = true" ng-mouseleave="hover_google = false">
+			    <h2>Engineering Intern, Google</h2><h3>Waterloo, ON; Jan/16 – Apr/16</h3>
+			    <ul>
+					<li>Added network setting functionality to Fiber iOS and Android apps.</li>
+					<li>Supported iOS team by implementing features within a strict timeline for inaugural application launch.</li>
+					<li>Contributed to open-source modeling framework FOAM.</li>
+			    </ul>
+			</div>
+    		<div class="project" id="Facebook1" ng-class="{hoverProject:hover_facebook1, activeProject:isActiveProject('Facebook1')}" ng-mouseenter="hover_facebook1 = true" ng-mouseleave="hover_facebook1 = false">
 			    <h2>Engineering Intern, Facebook</h2><h3>Seattle, WA; May/15 – Aug/15</h3>
 			    <ul>
 			      <li>Planned and executed a heavy refactor of the WebRTC Engine, impacting tens of millions of calls a day.</li>
@@ -117,6 +135,9 @@
     	<div class="section">
     		<h1>Leadership</h1>
     		<ul>
+    			<li>Chair and Founder, Future Female Techmakers Conference  – <span>Waterloo, 2016-2017</span></li>
+    			<li>Chair, Graduation Committee  – <span>Waterloo, 2016-2017</span></li>
+    			<li>Director, Conference on Diversity in Engineering  – <span>Waterloo, 2015</span></li>
     			<li>President and Founder of the WaterlUX club  – <span>Waterloo, 2013-2014</span></li>
     			<li>Engineering Ambassador Director  – <span>Waterloo, 2014-2015</span></li>
 			 	<li>Engineering Society Speaker  – <span>Waterloo, 2014-2015</span></li>
@@ -132,12 +153,31 @@
     		</ul>
     	</div>
     	<div class="section">
-    		<h1>Scholarships</h1>
+    		<h1>Awards</h1>
     		<ul>
+    			<li>
+    				Valedictorian  -
+    				<span>Faculty of Math, 2017</span>
+    			</li>
+    			<li>
+    				Paul & Paula Plummer Award  -
+    				<span>Engineering Society, 2017</span>
+    				<h4>Most revered award of the Engineering Society, awarded to those who have contributed to the benefit of the Society in a manner deemed to be outstanding and commendable, and who have shown a genuine caring for school spirit and the status of student life within the faculty of engineering.</h4>
+    			</li>
+    			<li>
+    				EngSoc Leadership Award  -
+    				<span>Engineering Society, 2016</span>
+    				<h4>Awarded for excelling in contributions to the Society, going above and beyond the expectations of their role.</h4>
+    			</li>
+    			<li>
+    				Karen Mark Scholarship  -
+    				<span>Faculty of Engineering, 2015</span>
+    				<h4>Awarded based on excellent academic achievement and demonstrated involvement in and contribution to student life at the University of Waterloo.</h4>
+    			</li>
     			<li>
     				Allstream ICT Engineering Scholarship  -
     				<span>Canadian Engineering Memorial Foundation, 2014</span>
-    				<h4>Awarded for acting as role models and promoting ICT to young women in engineering</h4>
+    				<h4>Awarded for acting as role models and promoting ICT to young women in engineering.</h4>
     			</li>
     			<li>
     				 Software Engineering Entrance Scholarship  -
@@ -146,17 +186,17 @@
     			<li>
     				Mildred Allworth Award  -
     				<span>Canadian Federation of University Women, 2012</span>
-    				<h4>Awarded for high academics, extracurricular activities, and volunteer service</h4>
+    				<h4>Awarded for high academics, extracurricular activities, and volunteer service.</h4>
     			</li>
     			<li>
     				Alumni Award  -
     				<span>Ontario Student Trustees’ Association, 2012</span>
-    				<h4>Awarded to a student trustee for leadership, innovation, cooperation, and perseverance</h4>
+    				<h4>Awarded to a student trustee for leadership, innovation, cooperation, and perseverance.</h4>
     			</li>
     			<li>
     				Lieutenant Governor’s Community Volunteer Award for Students  -
     				<span>2012</span>
-    				<h4>Awarded for going above and beyond volunteer hours required to graduate</h4>
+    				<h4>Awarded for going above and beyond volunteer hours required to graduate.</h4>
     			</li>
     		</ul>
     	</div>
@@ -164,7 +204,7 @@
     		<h1>Activities & Interests</h1>
     		<ul>
     			<li>Earned ARCT as a classical violinist, playing in the Toronto Symphony Youth Orchestra for 3 years and as a soloist with various orchestras</li>
-    			<li>Takes it to the ice with 15+ years experience of house-league and intermural ice hockey</li>
+    			<li>Takes it to the ice with 17+ years experience of house-league and intermural ice hockey</li>
     			<li>Loves Doctor Who, various other nerd cultures, sarcastic social media, and two-page resumes</li>
     		</ul>
     	</div>
